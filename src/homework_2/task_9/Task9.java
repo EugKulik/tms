@@ -20,6 +20,7 @@ public class Task9 {
             }
             for (int j = i; j > 0; j--) {
                 System.out.print("* ");
+
             }
             System.out.println();
         }
