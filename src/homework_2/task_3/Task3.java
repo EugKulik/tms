@@ -1,5 +1,6 @@
 package homework_2.task_3;
 
+// + 
 public class Task3 {
     public static void main(String[] args) {
         int res = 0;
