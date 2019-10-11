@@ -12,7 +12,7 @@ public class Task8 {
             }else {
                 countOdd+=i;
             }
-            countAll+=i;
+            countAll+=i; // общую сумму можно посчитать 1 раз после выхода из цикла
         }
         System.out.println("Sum all numbers = " + countAll);
         System.out.println("Sum even numbers = " + countEven);

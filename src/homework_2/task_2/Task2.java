@@ -8,7 +8,7 @@ public class Task2 {
         int aneba = 1;
         int delPart = 2;
 
-
+        // 24 - в переменную, 3 - тоже в переменную
         for (int i = 0; i < 24; i += 3) {
             aneba *= 2;
         }

@@ -1,5 +1,6 @@
 package homework_2.task_7;
 
+// +
 public class Task7 {
     public static void main(String[] args) {
         int count = 0;
