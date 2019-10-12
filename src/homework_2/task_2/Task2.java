@@ -4,14 +4,17 @@ package homework_2.task_2;
 //        сколько амеб будет через 3, 6, 9, 12,..., 24 часа.
 
 public class Task2 {
+    public static final int TIMEDEVISION = 3;
+    public static final int DAY = 24;
+
     public static void main(String[] args) {
         int aneba = 1;
-        int delPart = 2;
+        int devParts = 2;
 
         // 24 - в переменную, 3 - тоже в переменную
-        for (int i = 0; i < 24; i += 3) {
-            aneba *= 2;
+        for (int i = 0; i < DAY; i += TIMEDEVISION) {
+            aneba *= devParts;
+            System.out.println(i + " hour" + aneba + " aneb");
         }
-        System.out.println(aneba);
     }
 }
