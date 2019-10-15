@@ -3,9 +3,11 @@ package homework_3.task_6;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+// форматируй код
 public class Task6 {
     public static void main(String[] args) {
         int[] arrayTask = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+        // evenArray - думаю лучше так назвать
         int[] arrayInt = new int[arrayTask.length];
         int count = 0;
 
