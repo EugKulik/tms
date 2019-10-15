@@ -2,6 +2,7 @@ package homework_3.task_5;
 
 import java.util.Arrays;
 
+// +
 public class Task5 {
     public static void main(String[] args) {
         int[] array = {0, 1, 2, 3, 4};
