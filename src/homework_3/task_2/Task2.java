@@ -7,6 +7,7 @@ public class Task2 {
         averageArray(array);
     }
 
+    // метод должен выпонять 1 действие, т.е. этот считает сумму и возвращает число, печатаем уже в методе main
     private static void averageArray(int[] array) {
         double sum = 0;
 
