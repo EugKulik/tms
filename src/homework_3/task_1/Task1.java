@@ -3,6 +3,7 @@ package homework_3.task_1;
 import java.util.Arrays;
 import java.util.Scanner;
 
+// +
 public class Task1 {
     public static void main(String[] args) {
         int[] intsArray = new int[3];
