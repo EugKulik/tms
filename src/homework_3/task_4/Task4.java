@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class Task4 {
     public static void main(String[] args) {
         int sizeTable = 10;
+        // any - так себе название для таблицы умножения
         int[][] any = new int[sizeTable][sizeTable];
         for (int j = 0; j < any.length; j++) {
             for (int i = 0; i < any.length; i++) {
