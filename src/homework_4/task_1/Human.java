@@ -21,13 +21,14 @@ Task 4
 public class Human {
     private String name;
     private int age;
-    private static String text = "Hello from static";
+    private static String text = "Hello from static"; // static переменные идут первыми в классе
 
     public Human(String name, int age) {
         this.name = name;
         this.age = age;
     }
 
+    // конструктор без аргументов должен идти раньше других
     public Human() {
         this("Noname", 20);
     }
