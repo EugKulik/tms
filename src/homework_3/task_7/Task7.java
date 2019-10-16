@@ -10,9 +10,7 @@ public class Task7 {
         while (needIteration) {
             needIteration = false;
             for (int i = 1; i < array.length; i++) {
-                if (array[i] > array[i - 1]) {
-                    // если здесь пусто, то стоит изменить конструкцию так, чтобы убрать else, а код был в if(){}
-                } else {
+                if (array[i] < array[i - 1]) {
                     int min = array[i];
                     array[i] = array[i - 1];
                     array[i - 1] = min;
@@ -21,8 +19,5 @@ public class Task7 {
             }
         }
         System.out.println(Arrays.toString(array));
-// пустая строка не нужна
     }
-
 }
-
