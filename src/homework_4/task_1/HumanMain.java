@@ -17,10 +17,13 @@ Task 4
 В другом классе, с методом main создайте несколько экземпляров класса из 'Task 1'. В одном из них измените значение
 поля 'text' и затем выведите на экран поле 'text' у всех созданных классов. Подумайте почему так.
 */
+
 public class HumanMain {
     public static void main(String[] args) {
 
+        // human1 -> noName
         Human human1 = new Human();
+        // human2 - alex
         Human human2 = new Human("Alex", 28);
         human1.setText("hello from object1");
         int sizeArray = 5;
@@ -31,6 +34,7 @@ public class HumanMain {
         }
 
         human1.show();
+        // countEqualsHuman() - такие методы все же лучше не делать в классе-сущности, т.е. не в Human
         System.out.println(Human.countEqualsHuman(arrayHuman, human1));
         human1.printText();
         human2.printText();
