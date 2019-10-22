@@ -19,18 +19,18 @@ Task 4
 поля 'text' и затем выведите на экран поле 'text' у всех созданных классов. Подумайте почему так.
 */
 public class Human {
+    private static String text = "Hello from static"; // static переменные идут первыми в классе
     private String name;
     private int age;
-    private static String text = "Hello from static"; // static переменные идут первыми в классе
-
-    public Human(String name, int age) {
-        this.name = name;
-        this.age = age;
-    }
 
     // конструктор без аргументов должен идти раньше других
     public Human() {
         this("Noname", 20);
+    }
+
+    public Human(String name, int age) {
+        this.name = name;
+        this.age = age;
     }
 
     public String getName() {

@@ -22,10 +22,10 @@ public class HumanMain {
     public static void main(String[] args) {
 
         // human1 -> noName
-        Human human1 = new Human();
+        Human noName = new Human();
         // human2 - alex
-        Human human2 = new Human("Alex", 28);
-        human1.setText("hello from object1");
+        Human alex = new Human("Alex", 28);
+        noName.setText("hello from object1");
         int sizeArray = 5;
 
         Human arrayHuman[] = new Human[sizeArray];
@@ -33,10 +33,10 @@ public class HumanMain {
             arrayHuman[i] = new Human("Noname", 16 + i);
         }
 
-        human1.show();
+        noName.show();
         // countEqualsHuman() - такие методы все же лучше не делать в классе-сущности, т.е. не в Human
-        System.out.println(Human.countEqualsHuman(arrayHuman, human1));
-        human1.printText();
-        human2.printText();
+        System.out.println(Human.countEqualsHuman(arrayHuman, noName));
+        noName.printText();
+        alex.printText();
     }
 }
