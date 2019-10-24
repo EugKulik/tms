@@ -8,6 +8,9 @@ import java.util.Arrays;
 Если дошли до последнего элемента при вызове next(), должно вернуть первый элемент
 также должен быть метод getArray() - который возвращает массив и переопределен метод toString()*/
 public class Warehouse {
+    /* private int count, когда поле статик оно относится не к экземпляру класса, а к классу в целом,
+    т.е. если создать 2+ экземпляров класса Warehouse, то будут проблемы, т.к. они оба буду изменять одно и то же поле
+    */
     static int cont = 0;
     private final Rack[] rack;
 
@@ -16,10 +19,11 @@ public class Warehouse {
     }
 
     public Rack next() {
-        cont++;
+        cont++; 
         if ((rack.length > 0 & cont < rack.length)) {
-            return rack[cont - 1];
-        } else {
+            return rack[cont - 1]; 
+            // я думаю этот else стоит убрать и просто обнуляй count если он равен rack.length-1
+        } else { 
             return rack[(cont - 1) % rack.length];
         }
     }

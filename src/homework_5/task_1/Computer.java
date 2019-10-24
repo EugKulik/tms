@@ -1,9 +1,10 @@
 package homework_5.task_1;
 
+// abstract - нет необходимости, удали
 public abstract interface Computer {
-    void on();
+    void on(); // обычно такие методы возвращают boolean
 
-    void off();
+    void off(); // обычно такие методы возвращают boolean
 
-    void reset();
+    void reset(); // обычно такие методы возвращают boolean
 }
