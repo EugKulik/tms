@@ -11,7 +11,7 @@ public class Warehouse {
     /* private int count, когда поле статик оно относится не к экземпляру класса, а к классу в целом,
     т.е. если создать 2+ экземпляров класса Warehouse, то будут проблемы, т.к. они оба буду изменять одно и то же поле
     */
-    static int cont = 0;
+    private int cont = 0;
     private final Rack[] rack;
 
     public Warehouse(Rack[] rack) {
