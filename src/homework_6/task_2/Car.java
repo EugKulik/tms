@@ -20,9 +20,10 @@ P.S. имена методов условные, ваши могут отлич�
 public class Car {
     private Transmission transmission;
     private Engine engine;
-    private boolean carRide = false;
-    private boolean gasPedal = false;
+    private boolean carRide = false; // можно не писать false, это будет по умолчанию
+    private boolean gasPedal = false; // можно не писать false, это будет по умолчанию
 
+    // Transmission, Engine аргументами в конструктор
     public Car() {
         this.transmission = new Transmission();
         this.engine = new Engine();
@@ -37,6 +38,8 @@ public class Car {
     }
 
     public void ride() {
+        // carRide == true -> carRdide - 
+        // if (getEngine().isEngineWorks() && carRide) {
         if (getEngine().isEngineWorks() && carRide == false) {
             carRide = true;
             engine.startEngine();
@@ -53,9 +56,9 @@ public class Car {
     }
 
     public void speed() {
-
+//        if (carRide) {
         if (carRide == true) {
             System.out.println("Car speed = " + getTransmission().getNumberOfGear() * 20);
-        } else System.out.println("Car speed = 0");
+        } else System.out.println("Car speed = 0"); // else {}
     }
 }
