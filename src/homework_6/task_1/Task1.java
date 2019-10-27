@@ -11,11 +11,20 @@ public class Task1 {
 
     private static void printArray(int index, int[] array) {
         if (index == array.length - 1) {
-            System.out.println(array[index]);
+            System.out.println(array[index]); // эта строка и еще одна такая же повторяются, значит, стоит переписать код
             return;
         }
         System.out.println(array[index]);
         printArray(index + 1, array);
     }
+    
+    /*
+    private static void printArray(int index, int[] array) {
+        if (index < array.length) {
+            System.out.println(array[index]);
+            printArray(index + 1, array);
+        }
+    }
+    */
 }
 
