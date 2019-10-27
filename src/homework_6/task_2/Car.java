@@ -55,6 +55,8 @@ public class Car {
         System.out.println("Gas pedal depressed");
     }
 
+    // лучше сделать
+    // public int getSpeed() { а выводить на экран в методе мейн
     public void speed() {
 //        if (carRide) {
         if (carRide == true) {
