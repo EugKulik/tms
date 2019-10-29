@@ -1,16 +1,10 @@
 package homework_6.task_2;
 
 public class Engine {
-    private boolean engineWorks = false; // это поле по умолчанию будет инициализировано в false
-
-    // методы типа get/set обычно пишут после других, но перед equals/hashcode
-    public boolean isEngineWorks() {
-        return engineWorks;
-    }
+    private boolean engineWorks;
 
     public void startEngine() {
-        // if (!engineWorks) {
-        if (engineWorks == false) {
+        if (!engineWorks) {
             engineWorks = true;
             System.out.println("Engine starting");
         } else {
@@ -19,8 +13,7 @@ public class Engine {
     }
 
     void stopEngine() {
-        // if (engineWorks) {
-        if (engineWorks == true) {
+        if (engineWorks) {
             engineWorks = false;
             System.out.println("The engine is jammed");
         } else {
@@ -28,5 +21,8 @@ public class Engine {
         }
     }
 
-//  пустая строка не нужна
+    // методы типа get/set обычно пишут после других, но перед equals/hashcode
+    public boolean isEngineWorks() {
+        return engineWorks;
+    }
 }

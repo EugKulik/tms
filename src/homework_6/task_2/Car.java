@@ -20,13 +20,12 @@ P.S. имена методов условные, ваши могут отлич�
 public class Car {
     private Transmission transmission;
     private Engine engine;
-    private boolean carRide = false; // можно не писать false, это будет по умолчанию
-    private boolean gasPedal = false; // можно не писать false, это будет по умолчанию
+    private boolean carRide;
+    private boolean gasPedal;
 
-    // Transmission, Engine аргументами в конструктор
-    public Car() {
-        this.transmission = new Transmission();
-        this.engine = new Engine();
+    public Car(Transmission transmission, Engine engine) {
+        this.transmission = transmission;
+        this.engine = engine;
     }
 
     public Transmission getTransmission() {
@@ -38,14 +37,12 @@ public class Car {
     }
 
     public void ride() {
-        // carRide == true -> carRdide - 
-        // if (getEngine().isEngineWorks() && carRide) {
-        if (getEngine().isEngineWorks() && carRide == false) {
+        // carRide == true -> carRdide -
+        if (getEngine().isEngineWorks() && carRide) {
             carRide = true;
             engine.startEngine();
             transmission.changeGearUp();
             gasPedal();
-            speed();
         }
         return;
     }
@@ -55,12 +52,11 @@ public class Car {
         System.out.println("Gas pedal depressed");
     }
 
-    // лучше сделать
-    // public int getSpeed() { а выводить на экран в методе мейн
-    public void speed() {
-//        if (carRide) {
-        if (carRide == true) {
-            System.out.println("Car speed = " + getTransmission().getNumberOfGear() * 20);
-        } else System.out.println("Car speed = 0"); // else {}
+    public int getSpeed() {
+        if (carRide) {
+          return   getTransmission().getNumberOfGear() * 20;
+        } else{
+            return 0;
+        }
     }
 }
