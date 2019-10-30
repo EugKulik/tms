@@ -19,6 +19,7 @@ public class Task4Main {
                 "Plan is to make the game as good as possible but without compromising the core idea.";
         text = text.toLowerCase();
         String[] searchWorlds = {"alert", "add", "good", "plan"};
+        // через split неплохой варинт, но используя indexOf() не нужно создавать массив
         String[] words = text.split("\\s*(\\s|,|!|\\.)\\s*");
         for (String searchWorld : searchWorlds) {
             int count = 0;
