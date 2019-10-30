@@ -10,6 +10,7 @@ public class Task7Main {
 
         int iterNmber = 100000;
 
+        // раз вынес StringBuilder, StringBuffer замеры в отдельный метод, думаю стоило и для String сделать тоже самое
         long start = System.currentTimeMillis();
         for (int i = 0; i < iterNmber; i++) {
             text = text.concat(addText);
@@ -21,6 +22,7 @@ public class Task7Main {
         speedTest(stringBuilderText, addText, iterNmber);
     }
 
+    // лучше чтобы метод возвращал int, а выводить на экран в main()
     public static void speedTest(StringBuilder stringBuilderText, String addText, int iterNmber) {
         long start = System.currentTimeMillis();
         for (int i = 0; i < iterNmber; i++) {
@@ -30,6 +32,7 @@ public class Task7Main {
         System.out.println("StringBuilder append time in milliseconds = " + (finish - start));
     }
 
+        // лучше чтобы метод возвращал int, а выводить на экран в main()
     public static void speedTest(StringBuffer stringBufferText, String addText, int iterNmber) {
         long start = System.currentTimeMillis();
         for (int i = 0; i < iterNmber; i++) {
