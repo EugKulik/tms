@@ -9,6 +9,12 @@ public class Task8Main {
         Car car2 = new Car(MarkerEngine.MARKER1_8L);
         System.out.println(car1.getMarkerEngine());
         // это делать через рефлекцию?
+        // рефлекция -> рефлексия
+        
+        /*
+        создаешь массив авто
+        бежишь по массиву и проверяешь двигатель, если попадает под if(), значит сетаешь новое значение
+        */
     }
 }
 
