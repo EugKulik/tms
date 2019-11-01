@@ -10,35 +10,38 @@ public class Task7Main {
 
         int iterNmber = 100000;
 
-        // раз вынес StringBuilder, StringBuffer замеры в отдельный метод, думаю стоило и для String сделать тоже самое
+
+        System.out.println( speedTest(text, addText, iterNmber));
+        System.out.println( speedTest(stringBufferText, addText, iterNmber));
+        System.out.println(speedTest(stringBuilderText, addText, iterNmber));
+
+    }
+
+    public static long speedTest(String text, String addText,int iterNmber) {
         long start = System.currentTimeMillis();
         for (int i = 0; i < iterNmber; i++) {
             text = text.concat(addText);
         }
         long finish = System.currentTimeMillis();
-        System.out.println("String concat time in milliseconds = " + (finish - start));
-
-        speedTest(stringBufferText, addText, iterNmber);
-        speedTest(stringBuilderText, addText, iterNmber);
+        return finish - start;
     }
 
-    // лучше чтобы метод возвращал int, а выводить на экран в main()
-    public static void speedTest(StringBuilder stringBuilderText, String addText, int iterNmber) {
+    public static long speedTest(StringBuilder stringBuilderText, String addText, int iterNmber) {
         long start = System.currentTimeMillis();
         for (int i = 0; i < iterNmber; i++) {
             stringBuilderText.append(addText);
         }
         long finish = System.currentTimeMillis();
-        System.out.println("StringBuilder append time in milliseconds = " + (finish - start));
+        return finish - start;
     }
 
-        // лучше чтобы метод возвращал int, а выводить на экран в main()
-    public static void speedTest(StringBuffer stringBufferText, String addText, int iterNmber) {
+    // лучше чтобы метод возвращал int, а выводить на экран в main()
+    public static long speedTest(StringBuffer stringBufferText, String addText, int iterNmber) {
         long start = System.currentTimeMillis();
         for (int i = 0; i < iterNmber; i++) {
             stringBufferText.append(addText);
         }
         long finish = System.currentTimeMillis();
-        System.out.println("StringBuffer append time in milliseconds = " + (finish - start));
+        return finish - start;
     }
 }

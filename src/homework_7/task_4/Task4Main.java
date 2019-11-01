@@ -34,9 +34,8 @@ public class Task4Main {
 }
 /* for (String searchWorld : searchWorlds) {
     int index =0;
-    while(text.indexOf(searchWorld,index)!= -1){
-    index = text.indexOf(searchWorld,index) + searchWorld.length();
-    count++;
+        do text.indexOf(searchWorld, index);
+        while
     }
     System.out.println("Word " + searchWorld + " found " + count + " time(s)");
 } */

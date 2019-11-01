@@ -4,12 +4,10 @@ package homework_7.task_1;
 public class Task1Main {
     public static void main(String[] args) {
         String string = "engineering";
-        // substring1 -> engineer
-        String substring1 = string.substring(0, 6);
-        // substring2 -> ring
-        String substring2 = string.substring(7);
+        String engineer = string.substring(0, 6);
+        String ring = string.substring(7);
 
-        System.out.println(substring1);
-        System.out.println(substring2);
+        System.out.println(engineer);
+        System.out.println(ring);
     }
 }
