@@ -23,7 +23,7 @@ public class Task4Main {
         } finally {
             washingMachine.draining();
         }
-
+// пустая строка не нужна
     }
-
+// пустая строка не нужна
 }
