@@ -8,6 +8,8 @@ public class Task2Main {
         System.out.println(valueStringinInt(s));
     }
 
+    // твой метод возвращает 0, если нельзя распарсить строку в число. Это не лучшая практика
+    // s -> stringToParse
     static int valueStringinInt(String s) {
         int res = 0;
         try {
