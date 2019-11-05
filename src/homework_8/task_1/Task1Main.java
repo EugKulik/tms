@@ -12,7 +12,6 @@ public class Task1Main {
     }
 
     static int div(int divisible, int divisor) {
-// пустая строка не нужна
         int res = 0;
         try {
             res = divisible / divisor;

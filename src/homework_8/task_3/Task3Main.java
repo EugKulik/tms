@@ -15,16 +15,16 @@ public class Task3Main {
         int userSize;
         boolean iterloop = true;
         do {
-            try(BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
+            try (BufferedReader reader = new BufferedReader(new InputStreamReader(System.in))) {
 
                 System.out.println("Enter array size. Array size must be positive and<= " + SIZE);
                 userSize = Integer.parseInt(reader.readLine());
-                if (userSize > SIZE | userSize < 0) { // 0 в константу или переменную
-                    // MyException -> WrongArraySizeException
-                    throw new MyException("The entered value does not meet the condition");
+                int i = 0;
+                if (userSize > SIZE | userSize < i) { // 0 в константу или переменную
+                    throw new WrongArraySizeException("The entered value does not meet the condition");
                 }
                 iterloop = false;
-            } catch (MyException | NumberFormatException e) {
+            } catch (WrongArraySizeException | NumberFormatException e) {
                 System.err.println(e.getMessage());
                 System.out.println("Try again");
             }

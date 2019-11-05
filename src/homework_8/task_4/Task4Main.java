@@ -19,11 +19,9 @@ public class Task4Main {
             washingMachine.wash(electricity);
             washingMachine.rinsing(electricity);
         } catch (ElectricityException e) {
-            System.out.println( e.getMessage());
+            System.out.println(e.getMessage());
         } finally {
             washingMachine.draining();
         }
-// пустая строка не нужна
     }
-// пустая строка не нужна
 }
