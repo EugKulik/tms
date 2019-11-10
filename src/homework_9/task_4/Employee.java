@@ -10,6 +10,7 @@ public class Employee implements Serializable {
     public String name;
     private int age;
     private Work work;
+    // константы идут раньше всех в классе
     public static final long serialVersionUID = -5016582591659477854L;
 
     public Employee(String name, int age, Work work) {
