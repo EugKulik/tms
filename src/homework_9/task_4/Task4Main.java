@@ -10,6 +10,7 @@ import java.nio.file.Paths;
 У Employee есть имя, возраст и работа (work).
 Запишите объект Employee в файл, затем восстановите его обратно в объект.
 */
+// форматируй код
 public class Task4Main {
     public static final String FILE_NAME = "src/homework_9/task_4/Object";
 
@@ -20,9 +21,11 @@ public class Task4Main {
         readEmployee(FILE_NAME);
     }
 
+    // void -> Employee
     public static void readEmployee(String path) {
         try(ObjectInputStream objectInputStream = new ObjectInputStream(Files.newInputStream(Paths.get(path)))) {
             Employee employee =(Employee) objectInputStream.readObject();
+            // return employee, а на экран в методе main
             System.out.println(employee);
         } catch (IOException e) {
             e.printStackTrace();
