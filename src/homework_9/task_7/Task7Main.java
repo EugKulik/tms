@@ -7,6 +7,7 @@ import java.nio.file.*;
 public class Task7Main {
     public static void main(String[] args) {
        try (DirectoryStream<Path> src = Files.newDirectoryStream(Paths.get("src"))){
+           // а если будут папки внутри папок, код будет работать корректно?
            for (Path path : src) {
                System.out.println(path);
            }
