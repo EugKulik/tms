@@ -10,6 +10,7 @@ import static homework_9.task_2.Task2Main.FILE_PATH;
 public class Task3Main {
     public static void main(String[] args) {
         try {
+            // если не используешь try-с ресурсами, то надо самому закрывать поток
             BufferedReader bufferedReader = new BufferedReader(new FileReader(FILE_PATH));
             String s;
             while ((s = bufferedReader.readLine())!= null){
