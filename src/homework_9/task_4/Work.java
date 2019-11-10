@@ -6,6 +6,7 @@ import java.io.Serializable;
 У Employee есть имя, возраст и работа (work).
 Запишите объект Employee в файл, затем восстановите его обратно в объект.
 */
+// +
 public class Work implements Serializable {
     private String title;
     private int minExperience;
