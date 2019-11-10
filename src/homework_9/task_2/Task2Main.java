@@ -11,6 +11,7 @@ public class Task2Main {
 
     public static void main(String[] args) {
         try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(FILE_PATH))) {
+            // s -> переименуй
             String s = "input/output text \n";
             int iterNum = 10000;
             for (int i = 0; i < iterNum; i++) {
