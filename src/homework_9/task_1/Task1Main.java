@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.Arrays;
 
 //Есть массив чисел, заполнить его можете любыми цифрами. Нужно записать его в файл
+// +
 public class Task1Main {
     public static final String FILE_PATH = "src/homework_9/task_1/Int array file";
 
