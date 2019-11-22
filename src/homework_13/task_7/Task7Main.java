@@ -19,7 +19,10 @@ public class Task7Main {
         phones.add(new Phone("MiMix", "Xiaomi", 500));
         phones.add(new Phone("3310", "Nokia", 100));
         phones.add(new Phone("P7", "Huawei", 100));
+        
         Optional<Phone> minPrice = phones.stream().min(Comparator.comparing(phone -> phone.getPrice()));
+        
+        // а если в коллекция будет пустой? будет исключение, когда ты вызовешь метод get(), добавь проверку
         System.out.println(minPrice.get());
 
     }
