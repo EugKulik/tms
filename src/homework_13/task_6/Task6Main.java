@@ -8,6 +8,8 @@ import java.util.stream.Collectors;
 
 /*Task 6 (distinct)
 Есть коллекция телефонов, нужно убрать все повторяющиеся*/
+
+// +
 public class Task6Main {
     public static void main(String[] args) {
         List<Phone> phones = new ArrayList<>();
@@ -20,9 +22,11 @@ public class Task6Main {
         phones.add(new Phone("3310", "Nokia", 100));
         phones.add(new Phone("P7", "Huawei", 100));
         phones.add(new Phone("P7", "Huawei", 100));
+   
         List<Phone> collect = phones.stream()
                 .distinct()
                 .collect(Collectors.toList());
+   
         System.out.println(collect);
 
     }
