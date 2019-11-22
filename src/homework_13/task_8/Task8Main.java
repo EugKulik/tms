@@ -10,6 +10,8 @@ import java.util.stream.Collectors;
 
 /*Task 8
 Есть коллекция телефонов, нужно сгруппировать по компании и вывести на экран*/
+
+// +
 public class Task8Main {
     public static void main(String[] args) {
         List<Phone> phones = new ArrayList<>();
