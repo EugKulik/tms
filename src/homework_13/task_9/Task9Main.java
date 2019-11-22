@@ -10,6 +10,8 @@ import java.util.stream.Collectors;
 /*Task 9
 Есть коллекция телефонов. Нужно разделить на две части, в одной только айфоны, в другой остальные производители.
 */
+
+// +
 public class Task9Main {
     public static void main(String[] args) {
         List<Phone> phones = new ArrayList<>();
