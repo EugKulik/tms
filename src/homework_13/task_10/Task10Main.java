@@ -11,6 +11,8 @@ import java.util.stream.Collectors;
 Есть коллекция телефонов, сделать из нее мапу, в которой ключ - это производитель, а вэлью - это кол-во телефонов этого
 производителя в исходной коллекции
 */
+
+// +
 public class Task10Main {
     public static void main(String[] args) {
         List<Phone> phones = new ArrayList<>();
