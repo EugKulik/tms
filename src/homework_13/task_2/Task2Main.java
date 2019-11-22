@@ -16,9 +16,11 @@ public class Task2Main {
         fruitsList.add("pear");
         fruitsList.add("sugar apple");
 
+        // а если в коллекция будет пустой? будет исключение, когда ты вызовешь метод get(), добавь проверку
         Optional<String> min = fruitsList.stream().min(Comparator.comparing(String::length));
         System.out.println(min.get());
-
+        
+        // а если в коллекция будет пустой? будет исключение, когда ты вызовешь метод get(), добавь проверку
         Optional<String> max = fruitsList.stream().max(Comparator.comparing(String::length));
         System.out.println(max.get());
     }
