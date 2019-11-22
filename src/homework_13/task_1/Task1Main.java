@@ -6,6 +6,8 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 /*Есть коллекция строк, нужно убрать все элементы, длина которых меньше 5 символов*/
+
+// +
 public class Task1Main {
     public static void main(String[] args) {
         List<String> fruitsList = new ArrayList<>();
