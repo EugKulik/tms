@@ -11,6 +11,8 @@ import java.util.stream.Collectors;
 Есть коллекция телефонов. Необходимо получить из нее коллекцию производителей (производитель - это строка) и оставить только те,
 которые входят в список:
  Apple, Samsung, Xiaomi*/
+
+// +
 public class Task3Main {
     public static void main(String[] args) {
         List <String> searchProducer = Arrays.asList( "Apple", "Samsung", "Xiaomi");
