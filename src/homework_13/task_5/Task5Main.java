@@ -13,6 +13,7 @@ public class Task5Main {
         Optional<Integer> reduce = integerList.stream()
                 .limit(limit)
                 .reduce((x, y) -> x * y);
+        // не стоит просто печатать Optional, данные стоит извлекать
         System.out.println(reduce);
     }
 }
