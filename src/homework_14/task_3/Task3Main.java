@@ -22,6 +22,12 @@ public class Task3Main {
         stringListMap1.put("first", first);
         Map<String, List<Integer>> stringListMap2 = new HashMap<>();
         stringListMap2.put("second", second);
+        
+        /*
+        map2.forEach((key, value) -> map3.merge(key, value, (v1, v2) -> new Employee(v1.getId(),v2.getName())));
+        сайт с этим примером
+        https://www.baeldung.com/java-merge-maps
+        */
         Map<String, List<List<Integer>>> collect = Stream.concat(stringListMap1.entrySet().stream(), stringListMap2.entrySet().stream())
                 .collect(Collectors.groupingBy(Map.Entry::getKey, Collectors.mapping(Map.Entry::getValue, Collectors.toList())));
         System.out.println(collect);
