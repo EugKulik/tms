@@ -14,6 +14,7 @@ public class Task6Main {
     public static void main(String[] args) {
         int[] firstArray = {1, 4, 5};
         int[] secondArray = {0, 2, 3, 6};
+        // это не оптимальное решение, ты теряешь преимущество того, что массивы изначально отсортированы
         int[] sum = IntStream.concat(Arrays.stream(firstArray), Arrays.stream(secondArray))
                 .sorted()
                 .toArray();
