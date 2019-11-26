@@ -16,7 +16,6 @@ public class Task4Main {
         Optional<Integer> first = numberList.stream()
                 .filter(number -> number > findValue)
                 .findFirst();
-        // не стоит просто печатать Optional, данные стоит извлекать
-        System.out.println(first);
+        System.out.println(first.get());
     }
 }
