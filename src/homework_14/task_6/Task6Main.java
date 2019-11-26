@@ -9,7 +9,6 @@ import java.util.stream.Stream;
 Есть два отсортированных массива, необходимо самым оптимальным способом сделать из них один и тоже отсортированный
 [1,4,5]
 [0,2,3,6]
-
 Результат: [0,1,2,3,4,5]*/
 public class Task6Main {
     public static void main(String[] args) {
