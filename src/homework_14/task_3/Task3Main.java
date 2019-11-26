@@ -18,7 +18,6 @@ public class Task3Main {
         second.add(2);
         second.add(4);
         second.add(7);
-
         Map<String, List<Integer>> stringListMap1 = new HashMap<>();
         stringListMap1.put("first", first);
         Map<String, List<Integer>> stringListMap2 = new HashMap<>();
