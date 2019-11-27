@@ -8,6 +8,8 @@ import java.util.Scanner;
 Напишите программу, которая бы позволяла вводить имя и язык программирования с консоли и затем выводила на экран
 полученное предложение
 */
+
+// +
 public class Task1Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
