@@ -3,11 +3,12 @@ package homework_15.entity;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.io.Serializable;
 import java.util.List;
 
 //У каждого студента есть номер группы, имя, фамилия, факультет
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Student {
+public class Student implements Serializable {
     @JsonProperty("groupNum")
     private String groupNum;
     @JsonProperty("name")
