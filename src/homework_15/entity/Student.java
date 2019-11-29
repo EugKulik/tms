@@ -1,11 +1,23 @@
-package homework_15.task_1;
+package homework_15.entity;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
+import java.util.List;
 
 //У каждого студента есть номер группы, имя, фамилия, факультет
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Student {
+    @JsonProperty("groupNum")
     private String groupNum;
+    @JsonProperty("name")
     private String name;
+    @JsonProperty("surname")
     private String surname;
+    @JsonProperty("faculty")
     private String faculty;
+    @JsonProperty("favoriteSubjects")
+    private List<String> favoriteSubjects;
 
     public String getGroupNum() {
         return groupNum;
@@ -39,6 +51,14 @@ public class Student {
         this.faculty = faculty;
     }
 
+    public List<String> getFavoriteSubjects() {
+        return favoriteSubjects;
+    }
+
+    public void setFavoriteSubjects(List<String> favoriteSubjects) {
+        this.favoriteSubjects = favoriteSubjects;
+    }
+
     @Override
     public String toString() {
         return "Student{" +
@@ -46,6 +66,7 @@ public class Student {
                 ", name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", faculty='" + faculty + '\'' +
-                '}';
+                ", favoriteSubjects=" + favoriteSubjects +
+                '}' + "\n";
     }
 }

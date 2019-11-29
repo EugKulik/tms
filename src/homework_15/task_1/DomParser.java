@@ -1,5 +1,6 @@
 package homework_15.task_1;
 
+import homework_15.entity.Student;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -18,13 +19,14 @@ import java.util.List;
 Есть студенты. У каждого студента есть номер группы, имя, фамилия, факультет. Создать XML файл, в котором описать 3-4 студента.
 Прочитать из файла студентов при помощи DOM и SAX парсера*/
 public class DomParser {
-    static final String  PATH = "hw_15/xml/student";
+    static final String PATH = "hw_15/xml/student";
+
     public static void main(String[] args) throws ParserConfigurationException, IOException, SAXException {
 
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 
         DocumentBuilder documentBuilder = factory.newDocumentBuilder();
-        InputStream resource = ClassLoader.getSystemResourceAsStream(PATH);
+        InputStream resource = ClassLoader.getSystemResourceAsStream("hw_15/xml/student");
         Document document = documentBuilder.parse(resource);
 
         List<Student> students = new ArrayList<>();

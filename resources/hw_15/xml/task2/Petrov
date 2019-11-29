@@ -1,0 +1,10 @@
+{
+  "groupNum": "2t",
+  "name": "Peter",
+  "surname": "Petrov",
+  "faculty": "theatre",
+  "favoriteSubjects": [
+    "Literature",
+    "Music"
+  ]
+}

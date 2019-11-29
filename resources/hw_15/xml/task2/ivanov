@@ -1,0 +1,11 @@
+{
+  "groupNum": "1ct",
+  "name": "Ivan",
+  "surname": "Ivanov",
+  "faculty": "fct",
+  "favoriteSubjects": [
+    "Maths",
+    "Computing",
+    "Art and design"
+  ]
+}

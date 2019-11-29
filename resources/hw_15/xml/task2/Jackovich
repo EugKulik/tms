@@ -1,0 +1,10 @@
+{
+  "groupNum": "1L",
+  "name": "Jack",
+  "surname": "Jackovich",
+  "faculty": "law",
+  "favoriteSubjects": [
+    "English",
+    "Citizenship"
+  ]
+}
