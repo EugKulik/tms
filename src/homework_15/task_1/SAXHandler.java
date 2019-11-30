@@ -9,9 +9,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SAXHandler extends DefaultHandler {
-    List<Student> studentList = new ArrayList<>();
-    Student std = null;
-    String content = null;
+    List<Student> studentList = new ArrayList<>(); // private
+    Student std = null; // private
+    String content = null; // private
 
     @Override
     public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
