@@ -25,6 +25,7 @@ public class Task3Main {
     }
 
     private static List<Student> sortStudentList(List<Student> students) {
+        // Collections.sort(studentList, Comparator.comparing(Student::getName).thenComparing(Student::getSurname));
         List<Student> sortedStudentList = students.stream()
                 .sorted(Comparator.comparing(Student::getSurname).thenComparing(Student::getName))
                 .collect(Collectors.toList());
