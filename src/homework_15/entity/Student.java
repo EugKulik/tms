@@ -7,6 +7,8 @@ import java.io.Serializable;
 import java.util.List;
 
 //У каждого студента есть номер группы, имя, фамилия, факультет
+
+// +
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Student implements Serializable {
     @JsonProperty("groupNum")
