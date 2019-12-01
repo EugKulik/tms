@@ -19,7 +19,7 @@ import java.util.List;
 Есть студенты. У каждого студента есть номер группы, имя, фамилия, факультет. Создать XML файл, в котором описать 3-4 студента.
 Прочитать из файла студентов при помощи DOM и SAX парсера*/
 public class DomParser {
-    static final String PATH = "hw_15/xml/student";
+    static final String PATH = "hw_15/xml/student.xml";
 
     public static void main(String[] args) throws ParserConfigurationException, IOException, SAXException {
 

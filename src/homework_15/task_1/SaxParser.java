@@ -19,6 +19,5 @@ public class SaxParser {
         saxParser.parse(ClassLoader.getSystemResourceAsStream("hw_15/xml/student.xml"),saxHandler);
 //        List<Student> students = saxHandler.studentList;
 //        System.out.println(students);
-        // не оставляй закомменченный код в готовом продукте
     }
 }

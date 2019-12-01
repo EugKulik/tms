@@ -1,7 +1,7 @@
 <?xml version="1.1" encoding="UTF-8" ?>
 <students>
     <student>
-    <groupNum>14</groupNum>
+        <groupNum>14</groupNum>
         <name>Jonh</name>
         <surname>Jackovich</surname>
         <faculty>fct</faculty>

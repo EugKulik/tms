@@ -18,7 +18,7 @@ public class SAXHandler extends DefaultHandler {
     public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
         switch (qName) {
             //Create a new Employee object when the start tag is found
-            case "employee":
+            case "student":
                 std = new Student();
                 break;
         }
