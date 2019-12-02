@@ -4,6 +4,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import homework_15.entity.Student;
 
 import java.io.*;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -19,17 +20,11 @@ public class Task3Main {
         List<Student> students = getListStudents(pathName);
         List<Student> sortedStudentList = sortStudentList(students);
         fileWriter(sortedStudentList,outPathName);
-
-
-
     }
 
     private static List<Student> sortStudentList(List<Student> students) {
-        // Collections.sort(studentList, Comparator.comparing(Student::getName).thenComparing(Student::getSurname));
-        List<Student> sortedStudentList = students.stream()
-                .sorted(Comparator.comparing(Student::getSurname).thenComparing(Student::getName))
-                .collect(Collectors.toList());
-        return sortedStudentList;
+        Collections.sort(students, Comparator.comparing(Student::getName).thenComparing(Student::getSurname));
+        return students;
     }
 
     private static void fileWriter(List<Student> e, String path) throws IOException {
