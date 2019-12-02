@@ -9,6 +9,5 @@ public class Task1Main {
         thread.start();
         thread.join();
         System.out.println(Thread.currentThread().getName());
-
     }
 }
