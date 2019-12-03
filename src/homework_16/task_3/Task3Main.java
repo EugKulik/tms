@@ -1,5 +1,6 @@
 package homework_16.task_3;
 
+// +
 public class Task3Main {
     final static int SCOPE_OF_SUPPLY1 = 100;
     final static int SCOPE_OF_SUPPLY2 = 50;
