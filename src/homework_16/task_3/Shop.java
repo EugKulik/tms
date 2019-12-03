@@ -8,6 +8,7 @@ public class Shop {
         this.name = name;
     }
 
+    // многовато пробелов между словами
     public  synchronized  void putToy(){
         numOfToys++;
     }
