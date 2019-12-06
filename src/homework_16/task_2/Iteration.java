@@ -1,7 +1,7 @@
 package homework_16.task_2;
 
 public class Iteration implements Runnable {
-    final static int MAX_ITER_NUM = 20;
+    final static int MAX_ITER_NUM = 20; // 20 лучше через конструктор
 
     @Override
     public void run() {
