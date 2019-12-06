@@ -5,6 +5,4 @@ package com.company;
 //        суммарный путь пробежит спортсмен за 7 дней?
 public class Main {
 
-    public static void main(String[] args) {
-    }
 }
